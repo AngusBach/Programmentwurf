@@ -1,6 +1,13 @@
-#ifndef PRINTS_H_18RqkXbbAj
-#define PRINTS_H_18RqkXbbAj
+#ifndef PRINTS_H_BGR346WN8j
+#define PRINTS_H_BGR346WN8j
 
-void print_developer(void);
+
+typedef struct
+{
+    char name;
+    char aliase;
+}   developer;
+
+void print_developer(developer name, developer aliase);
 
 #endif
