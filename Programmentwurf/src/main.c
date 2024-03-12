@@ -22,6 +22,19 @@ int main(void)
 
     scanf("%d",&instruction);
 
+    switch ()  //switch case machen !!!!!!!!!!
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     if(instruction==1){         //if instruction is 1, print developers
 
     }
@@ -34,7 +47,7 @@ int main(void)
     else if(instruction==4){    //if instruction is 4, exit application
 
     }
-    else{                       //else, nothing happens
+    default{                       //wrong Command!!!
     
     }
 }
