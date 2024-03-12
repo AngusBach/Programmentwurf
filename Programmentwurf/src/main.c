@@ -27,7 +27,8 @@ int main(void)
 
         switch(instruction) {
             case 1:
-                printf("Listing Developers...\n");
+                void print_developer(Angus Bach, AngusBach);
+                void print_developer(Faik Hadutoglu, faikhadut);
                 // Code for listing developers
                 break;
             case 2:
@@ -38,12 +39,16 @@ int main(void)
                 break;
             case 3:
                 
-                printf("Printing Group Logo...\n");
+                
+                
 
 
-                //void print_developer(Angus Bach, AngusBach);
-                //void print_developer(Faik Hadutoglu, faikhadut);
-                // Code for printing group
+                void print_developer("Angus Bach", "AngusBach");
+                void print_developer("Faik Hadutoglu", "faikhadut");
+                
+                
+                void print_group_logo(void);
+                
                 break;
             case 4:
                 printf("Exiting...\n");
