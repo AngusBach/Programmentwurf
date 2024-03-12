@@ -5,7 +5,7 @@
 void print_group_logo(void)
 {
 
-
+printf("Opel");
 
 
 

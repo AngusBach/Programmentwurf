@@ -4,28 +4,14 @@
 #include "developer.h"
 
 
-int instruction;
+char instruction;       //
 int main(void)
 {
+   
+
+
+       while (1) {
     printf("\033[4;92m========================\n");
-    printf("Choose your action: \n");
-    printf("List Developers \t[1]\n");
-    printf("Print Group Logo \t[2]\n");
-    printf("Print Group \t\t[3]\n");
-    printf("Exit \t\t\t[4]\n");
-    printf("========================\033[0m\n");
-
-    printf("Enter your selection: ");
-
-
-
-
-    scanf("%d",&instruction);
-
-    int option;
-
-    while (1) {
-        printf("\033[4;92m========================\n");
     printf("Choose your action: \n");
     printf("List Developers \t[1]\n");
     printf("Print Group Logo \t[2]\n");
@@ -37,7 +23,7 @@ int main(void)
         
 
 
-        scanf("%d", &instruction);
+        scanf("%c", &instruction);
 
         switch(instruction) {
             case 1:
@@ -52,11 +38,11 @@ int main(void)
                 break;
             case 3:
                 
+                printf("Printing Group Logo...\n");
 
 
-
-                void print_developer(Angus Bach, AngusBach);
-                void print_developer(Faik Hadutoglu, faikhadut);
+                //void print_developer(Angus Bach, AngusBach);
+                //void print_developer(Faik Hadutoglu, faikhadut);
                 // Code for printing group
                 break;
             case 4:
@@ -68,28 +54,4 @@ int main(void)
     }
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    if(instruction==1){         //if instruction is 1, print developers
-
     }
-    else if(instruction==2){    //if instruction is 2, print group logo
-    
-    }
-    else if(instruction==3){    //if instruction is 3, print developers and group logo
-
-    }
-    else if(instruction==4){    //if instruction is 4, exit application
-
-    }
-    default{                       //wrong Command!!!
-    
-    }
-}
