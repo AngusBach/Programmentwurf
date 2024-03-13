@@ -4,7 +4,7 @@
 #include "developer.h"
 
 
-char instruction;       //
+char instruction;       //char damit es zu keinem Fehler kommt, sollte man stat einer Zahl für int einen Buchstagen in die Eingabe geben
 int main(void)
 {
    

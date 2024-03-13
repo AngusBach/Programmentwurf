@@ -1,0 +1,105 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "Programmentwurf",
+					"jsonFile" : "directory-Programmentwurf-Debug-3e114bc4ea5f3749457d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "Programmentwurf",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Project"
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "Programmentwurf",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "libraries_developer_group_lib::@9ac4cd5d47290cd61f2c",
+					"jsonFile" : "target-libraries_developer_group_lib-Debug-1c5eff50a53ab19a06ac.json",
+					"name" : "libraries_developer_group_lib",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "libraries_developer_lib::@9ac4cd5d47290cd61f2c",
+					"jsonFile" : "target-libraries_developer_lib-Debug-e7de19d6d902409ded50.json",
+					"name" : "libraries_developer_lib",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "libraries_ex_exec::@9ac4cd5d47290cd61f2c",
+					"jsonFile" : "target-libraries_ex_exec-Debug-15771e67afbdbec281bf.json",
+					"name" : "libraries_ex_exec",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/workspaces/Programmentwurf/build",
+		"source" : "/workspaces/Programmentwurf"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

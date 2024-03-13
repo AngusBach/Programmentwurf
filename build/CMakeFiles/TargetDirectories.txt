@@ -1,0 +1,7 @@
+/workspaces/Programmentwurf/build/CMakeFiles/edit_cache.dir
+/workspaces/Programmentwurf/build/CMakeFiles/rebuild_cache.dir
+/workspaces/Programmentwurf/build/Programmentwurf/CMakeFiles/libraries_developer_lib.dir
+/workspaces/Programmentwurf/build/Programmentwurf/CMakeFiles/libraries_developer_group_lib.dir
+/workspaces/Programmentwurf/build/Programmentwurf/CMakeFiles/libraries_ex_exec.dir
+/workspaces/Programmentwurf/build/Programmentwurf/CMakeFiles/edit_cache.dir
+/workspaces/Programmentwurf/build/Programmentwurf/CMakeFiles/rebuild_cache.dir
