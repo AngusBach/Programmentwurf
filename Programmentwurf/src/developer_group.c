@@ -5,7 +5,20 @@
 void print_group_logo(void)
 {
 
-printf("Opel");
+
+    printf("           ########           \n");
+    printf("        ######  ######        \n");
+    printf("      ####          ####      \n");
+    printf("    ####              ####    \n");
+    printf("    ###                ###    \n");
+    printf(" ###################    ###   \n");
+    printf("   ###      ######      ###   \n");
+    printf("   ###    ####################\n");
+    printf("    ###                ###    \n");
+    printf("    ####              ####    \n");
+    printf("      ####          ####      \n");
+    printf("        ######  ######        \n");
+    printf("           ########           \n");
 
 
 
