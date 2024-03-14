@@ -5,10 +5,9 @@
 
 
 
-{
-char instruction;    //to prevent errors, instead of a number, one should input a character into the input
-int main(void)
 
+int main(void){
+char instruction;    //to prevent errors, instead of a number, one should input a character into the input
 
        while (1) {
     printf("\033[4;92m========================\n");
@@ -27,13 +26,13 @@ int main(void)
 
         switch(instruction) {
             case 1:
-                void print_developer("Angus Bach", "AngusBach");
-                void print_developer("Faik Hadutoglu", "faikhadut");
+                print_developer("Angus Bach", "AngusBach");
+                print_developer("Faik Hadutoglu", "faikhadut");
                 // Code for listing developers
                 break;
             case 2:
                 printf("Printing Group Logo...\n");
-                void print_group_logo(void)
+                void print_group_logo(void);
 
 
                 // Code for printing group logo
@@ -45,11 +44,11 @@ int main(void)
                 
 
 
-                void print_developer("Angus Bach", "AngusBach");
-                void print_developer("Faik Hadutoglu", "faikhadut");
+                print_developer("Angus Bach", "AngusBach");
+                print_developer("Faik Hadutoglu", "faikhadut");
                 
                 
-                void print_group_logo(void);
+                print_group_logo();
                 
                 break;
             case 4:
