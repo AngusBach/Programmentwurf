@@ -1,5 +1,5 @@
-#ifndef PRINTS_H_18RqkXbbAj
-#define PRINTS_H_18RqkXbbAj
+#ifndef DEVELOPER_GROUP_H_
+#define DEVELOPER_GROUP_H_
 
 void print_group_logo(void);
 

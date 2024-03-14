@@ -1,5 +1,5 @@
-#ifndef PRINTS_H_BGR346WN8j
-#define PRINTS_H_BGR346WN8j
+#ifndef DEVELOPER_H_
+#define DEVELOPER_H_
 
 #define NAME_LENGTH (25U)
 
