@@ -4,7 +4,7 @@
 #include "developer.h"
 
 
-char instruction;       //char damit es zu keinem Fehler kommt, sollte man stat einer Zahl für int einen Buchstagen in die Eingabe geben
+char instruction;    //to prevent errors, instead of a number, one should input a character into the input
 int main(void)
 {
    
@@ -27,16 +27,18 @@ int main(void)
 
         switch(instruction) {
             case 1:
-                void print_developer(Angus Bach, AngusBach);
-                void print_developer(Faik Hadutoglu, faikhadut);
+                void print_developer(AngusBach, AngusBach);
+                void print_developer(FaikHadutoglu, faikhadut);
                 // Code for listing developers
                 break;
             case 2:
                 printf("Printing Group Logo...\n");
+                void print_group_logo(void)
 
 
                 // Code for printing group logo
                 break;
+
             case 3:
                 
                 
