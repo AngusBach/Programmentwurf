@@ -4,10 +4,10 @@
 #include "developer.h"
 
 
+
+{
 char instruction;    //to prevent errors, instead of a number, one should input a character into the input
 int main(void)
-{
-   
 
 
        while (1) {
@@ -27,8 +27,8 @@ int main(void)
 
         switch(instruction) {
             case 1:
-                void print_developer(AngusBach, AngusBach);
-                void print_developer(FaikHadutoglu, faikhadut);
+                void print_developer("Angus Bach", "AngusBach");
+                void print_developer("Faik Hadutoglu", "faikhadut");
                 // Code for listing developers
                 break;
             case 2:
