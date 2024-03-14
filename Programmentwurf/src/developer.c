@@ -9,7 +9,7 @@
 void print_developer(developer name, developer aliase)
 {
     printf("=====================\n");
-    printf("Name:   %s\n", name);
-    printf("Alias:  %s\n", aliase);
+    printf("Name:   %u\n", name);
+    printf("Alias:  %u\n", aliase);
     printf("=====================\n");
 }
