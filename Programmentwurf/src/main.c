@@ -24,7 +24,7 @@ int main(void) {
             printf("Enter your selection: ");
             scanf(" %s", instruction);
 
-            long int choice = strtol(instruction, &ptr,10); // Umwandlung des Zeichenarrays in einen Integer
+            long int choice = strtol(instruction, &ptr, 10); // Umwandlung des Zeichenarrays in einen Integer
 
             switch(choice) {
                 case 1:

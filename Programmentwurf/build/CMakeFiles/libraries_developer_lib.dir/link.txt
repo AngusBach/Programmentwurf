@@ -1,2 +1,0 @@
-/usr/bin/ar qc liblibraries_developer_lib.a CMakeFiles/libraries_developer_lib.dir/src/developer.c.o
-/usr/bin/ranlib liblibraries_developer_lib.a
