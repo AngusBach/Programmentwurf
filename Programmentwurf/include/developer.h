@@ -6,7 +6,7 @@
 typedef struct // Defining a structure to hold developer information
 {
     char name[NAME_LENGTH]; // Name of the developer
-    char aliase[NAME_LENGTH]; // Alias of the developer
+    char alae[NAME_LENGTH]; // Alias of the developer
 }   developer; //specific name for our struct
 
 
