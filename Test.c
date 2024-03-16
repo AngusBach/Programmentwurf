@@ -1,8 +1,9 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 typedef struct {
-    char name[25];
-    char aliase[25];
+    char name[16];
+    char aliase[12];
 } developer;
 
 void print_group_logo(void) {
@@ -21,59 +22,66 @@ void print_group_logo(void) {
     printf("           ########           \n");
 }
 
-void print_developer(const developer *name, const developer *aliase) {
+void print_developer(const developer *dev1, const developer *dev2) {
     printf("=====================\n");
-    printf("Name:   %s\n", name->name);
-    printf("Alias:  %s\n", aliase->aliase);
+    printf("Name:   %s\n", dev1->name);
+    printf("Alias:  %s\n", dev1->aliase);
+    printf("=====================\n");
+    printf("Name:   %s\n", dev2->name);
+    printf("Alias:  %s\n", dev2->aliase);
     printf("=====================\n");
 }
 
 int main(void) {
-    char instruction;
+    char instruction[1];
+    char *ptr = instruction;
 
     while (1) {
-        printf("\033[4;92m========================\n");
-        printf("Choose your action: \n");
-        printf("List Developers \t[1]\n");
-        printf("Print Group Logo \t[2]\n");
-        printf("Print Group \t\t[3]\n");
-        printf("Exit \t\t\t[4]\n");
-        printf("========================\033[0m\n");
+        int valid_input = 0; // Flag, um gültige Eingaben zu verfolgen
+        while (!valid_input) { // Solange die Eingabe ungültig ist, wiederhole den Vorgang
+            printf("\033[4;92m========================\n");
+            printf("Choose your action: \n");
+            printf("List Developers \t[1]\n");
+            printf("Print Group Logo \t[2]\n");
+            printf("Print Group \t\t[3]\n");
+            printf("Exit \t\t\t[4]\n");
+            printf("========================\033[0m\n");
 
-        printf("Enter your selection: ");
-        scanf(" %c", &instruction);
+            printf("Enter your selection: ");
+            scanf(" %s", ptr);
 
-        switch(instruction) {
-            case 0:
-                printf("That was not a valid input!\n");
-                break;
-            case '1':
-                {
-                    developer angus_bach = {"Angus Bach", "AngusBach"};
-                    developer faik_hadutoglu = {"Faik Hadutoglu", "faikhadut"};
-                    print_developer(&angus_bach, &angus_bach);
-                    print_developer(&faik_hadutoglu, &faik_hadutoglu);
-                }
-                break;
-            case '2':
-                printf("Printing Group Logo...\n");
-                print_group_logo();
-                break;
-            case '3':
-                {
-                    developer angus_bach = {"Angus Bach", "AngusBach"};
-                    developer faik_hadutoglu = {"Faik Hadutoglu", "faikhadut"};
-                    print_developer(&angus_bach, &angus_bach);
-                    print_developer(&faik_hadutoglu, &faik_hadutoglu);
+            int choice = atoi(ptr); // Umwandlung des Zeichenarrays in einen Integer
+
+            switch(choice) {
+                case 1:
+                    {
+                        developer angus_bach = {"Angus Bach", "AngusBach"};
+                        developer faik_hadutoglu = {"Faik Hadutoglu", "faikhadut"};
+                        print_developer(&angus_bach, &faik_hadutoglu);
+                    }
+                    valid_input = 1; // Setze die Flagge auf 1, um die Schleife zu beenden
+                    break;
+                case 2:
+                    printf("Printing Group Logo...\n");
                     print_group_logo();
-                }
-                break;
-            case '4':
-                printf("Exiting...\n");
-                return 0;
-            default:
-                printf("Invalid option. Please enter a number between 1 and 4.\n");
-                break,
+                    valid_input = 1; // Setze die Flagge auf 1, um die Schleife zu beenden
+                    break;
+                case 3:
+                    {
+                        developer angus_bach = {"Angus Bach", "AngusBach"};
+                        developer faik_hadutoglu = {"Faik Hadutoglu", "faikhadut"};
+                        print_developer(&angus_bach, &faik_hadutoglu);
+                        print_group_logo();
+                    }
+                    valid_input = 1; // Setze die Flagge auf 1, um die Schleife zu beenden
+                    break;
+                case 4:
+                    printf("Exiting...\n");
+                    return 0;
+                default:
+                    printf("Invalid option. Please enter a number between 1 and 4.\n");
+                    break; // Füge eine break-Anweisung hinzu, um die Schleife zu beenden.
+            }
         }
     }
 
