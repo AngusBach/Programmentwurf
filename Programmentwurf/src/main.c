@@ -1,67 +1,63 @@
 #include <stdio.h>
-
+#include <stdlib.h>
 #include "developer_group.h"
 #include "developer.h"
 
 
 
 
-int main(void){
-char instruction;    //to prevent errors, instead of a number, one should input a character into the input
+int main(void) {
+    char instruction[1];
+    char *ptr;
 
-       while (1) {
-    printf("\033[4;92m========================\n");
-    printf("Choose your action: \n");
-    printf("List Developers \t[1]\n");
-    printf("Print Group Logo \t[2]\n");
-    printf("Print Group \t\t[3]\n");
-    printf("Exit \t\t\t[4]\n");
-    printf("========================\033[0m\n");
+    while (1) {
+        int valid_input = 0; // Flag, um gültige Eingaben zu verfolgen
+        while (!valid_input) { // Solange die Eingabe ungültig ist, wiederhole den Vorgang
+            printf("\033[4;92m========================\n");
+            printf("Choose your action: \n");
+            printf("List Developers \t[1]\n");
+            printf("Print Group Logo \t[2]\n");
+            printf("Print Group \t\t[3]\n");
+            printf("Exit \t\t\t[4]\n");
+            printf("========================\033[0m\n");
 
-    printf("Enter your selection: ");
-        
+            printf("Enter your selection: ");
+            scanf(" %s", instruction);
 
+            long int choice = strtol(instruction, &ptr,10); // Umwandlung des Zeichenarrays in einen Integer
 
-        scanf("%c", &instruction);
-
-        switch(instruction) {
-            case 0:
-                printf("Invalid option. Please enter a number between 1 and 4.\n");
-                break;
-            case 1:
-                print_developer("Angus Bach", "AngusBach");
-                print_developer("Faik Hadutoglu", "faikhadut");
-                // Code for listing developers
-                break;
-            case 2:
-                printf("Printing Group Logo...\n");
-                void print_group_logo(void);
-
-
-                // Code for printing group logo
-                break;
-
-            case 3:
-                
-                
-                
-
-
-                print_developer("Angus Bach", "AngusBach");
-                print_developer("Faik Hadutoglu", "faikhadut");
-                
-                
-                print_group_logo();
-                
-                break;
-            case 4:
-                printf("Exiting...\n");
-                return 0; // Exit the program
-            default:
-                printf("Invalid option. Please enter a number between 1 and 4.\n");
-                break;
+            switch(choice) {
+                case 1:
+                    {
+                        developer angus_bach = {"Angus Bach", "AngusBach"};
+                        developer faik_hadutoglu = {"Faik Hadutoglu", "faikhadut"};
+                        print_developer(&angus_bach, &faik_hadutoglu);
+                    }
+                    valid_input = 1; // Setze die Flagge auf 1, um die Schleife zu beenden
+                    break;
+                case 2:
+                    printf("Printing Group Logo...\n");
+                    print_group_logo();
+                    valid_input = 1; // Setze die Flagge auf 1, um die Schleife zu beenden
+                    break;
+                case 3:
+                    {
+                        developer angus_bach = {"Angus Bach", "AngusBach"};
+                        developer faik_hadutoglu = {"Faik Hadutoglu", "faikhadut"};
+                        print_developer(&angus_bach, &faik_hadutoglu);
+                        print_group_logo();
+                    }
+                    valid_input = 1; // Setze die Flagge auf 1, um die Schleife zu beenden
+                    break;
+                case 4:
+                    printf("Exiting...\n");
+                    return 0;
+                default:
+                    printf("Invalid option. Please enter a number between 1 and 4.\n");
+                    break; // Füge eine break-Anweisung hinzu, um die Schleife zu beenden.
+            }
         }
     }
-    
-    
-    }
+
+    return 0;
+}

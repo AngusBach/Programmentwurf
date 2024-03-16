@@ -10,10 +10,7 @@ typedef struct
 }   developer;
 
 
-void print_developer(const developer *name, const developer *aliase);
+void print_developer(const developer *dev1, const developer *dev2);
 
-//void print_developer(developer name[], developer aliase[]); //pointer benutzen
-
-//void print_developer(developer const *const char name[]);
 
 #endif

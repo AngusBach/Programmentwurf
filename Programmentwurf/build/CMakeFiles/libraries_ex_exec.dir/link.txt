@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/libraries_ex_exec.dir/src/main.c.o -o libraries_ex_exec  -Wl,-rpath,/workspaces/Programmentwurf/Programmentwurf/build liblibraries_developer_lib.a liblibraries_developer_group_lib.so 
