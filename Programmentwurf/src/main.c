@@ -1,16 +1,17 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "developer_group.h"
-#include "developer.h"
+
+#include "developer_group.h" // Include the header file for developer group
+#include "developer.h" // Include the header file for developer information
 
 
 
 
 int main(void) {
     char instruction[1];
-    char *ptr;
+    char *ptr=NULL;
 
-    while (1) {
+    
         int valid_input = 0; // Flag, um gültige Eingaben zu verfolgen
         while (!valid_input) { // Solange die Eingabe ungültig ist, wiederhole den Vorgang
             printf("\033[4;92m========================\n");
@@ -33,12 +34,12 @@ int main(void) {
                         developer faik_hadutoglu = {"Faik Hadutoglu", "faikhadut"};
                         print_developer(&angus_bach, &faik_hadutoglu);
                     }
-                    valid_input = 1; // Setze die Flagge auf 1, um die Schleife zu beenden
+                 
                     break;
                 case 2:
                     printf("Printing Group Logo...\n");
                     print_group_logo();
-                    valid_input = 1; // Setze die Flagge auf 1, um die Schleife zu beenden
+                    
                     break;
                 case 3:
                     {
@@ -47,7 +48,7 @@ int main(void) {
                         print_developer(&angus_bach, &faik_hadutoglu);
                         print_group_logo();
                     }
-                    valid_input = 1; // Setze die Flagge auf 1, um die Schleife zu beenden
+               
                     break;
                 case 4:
                     printf("Exiting...\n");
@@ -57,7 +58,7 @@ int main(void) {
                     break; // Füge eine break-Anweisung hinzu, um die Schleife zu beenden.
             }
         }
-    }
+    
 
     return 0;
 }
