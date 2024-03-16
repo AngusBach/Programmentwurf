@@ -10,4 +10,4 @@ void print_developer(const developer *dev1, const developer *dev2) {
     printf("Alias:  %s\n", dev2->alae);
     printf("=====================\033[0m\n");
 }
-//   \033[38;5;206m      \033[94;1;6m \033[0m
+
