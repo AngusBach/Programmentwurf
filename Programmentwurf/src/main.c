@@ -53,7 +53,7 @@ int main(void) {
                     printf("Exiting...\n");
                     return 0; // Exit the program
                 default:
-                    printf("Invalid option. Please enter a number between 1 and 4.\n");
+                    printf("\033[91;1;5mInvalid option. Please enter a number between 1 and 4\033[0m\n");
                     break; // Add a break statement to exit the loop.
             }
         }

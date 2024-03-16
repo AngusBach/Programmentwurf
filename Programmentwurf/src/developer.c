@@ -2,11 +2,12 @@
 #include <stdio.h>
 // Printing our informations with our name and alias
 void print_developer(const developer *dev1, const developer *dev2) {
-    printf("=====================\n");
+    printf("\033[94;1;6m=====================\n");
     printf("Name:   %s\n", dev1->name);
     printf("Alias:  %s\n", dev1->alae);
     printf("=====================\n");
     printf("Name:   %s\n", dev2->name);
     printf("Alias:  %s\n", dev2->alae);
-    printf("=====================\n");
+    printf("=====================\033[0m\n");
 }
+//   \033[38;5;206m      \033[94;1;6m \033[0m
