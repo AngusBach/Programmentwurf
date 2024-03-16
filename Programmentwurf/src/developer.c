@@ -1,6 +1,5 @@
-#include <stdio.h>
 #include "developer.h"
-
+#include <stdio.h>
 
 
 void print_developer(const developer *name, const developer *aliase) {
