@@ -1,8 +1,19 @@
 #!/bin/bash
 
+# Run CMake to generate build files
 cmake  -S . -B build
-cd build
-make 
+
+# Navigate to the build directory
+cd build  
+
+# Compile the project using make
+make
+
+# Run the executable
 ./libraries_ex_exec
-cd ..
+
+# Navigate back to the parent directory
+cd .. 
+
+# Remove the build directory
 rm -rf build
