@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 typedef struct {
-    char name[12];
-    char aliase[12];
+    char name[25];
+    char aliase[25];
 } developer;
 
 void print_group_logo(void) {
@@ -44,6 +44,9 @@ int main(void) {
         scanf(" %c", &instruction);
 
         switch(instruction) {
+            case 0:
+                printf("That was not a valid input!\n");
+                break;
             case '1':
                 {
                     developer angus_bach = {"Angus Bach", "AngusBach"};
@@ -70,6 +73,7 @@ int main(void) {
                 return 0;
             default:
                 printf("Invalid option. Please enter a number between 1 and 4.\n");
+                break,
         }
     }
 

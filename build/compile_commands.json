@@ -1,19 +1,19 @@
 [
 {
   "directory": "/workspaces/Programmentwurf/build",
-  "command": "/usr/bin/clang-16 -I/workspaces/Programmentwurf/Programmentwurf/include -g -std=gnu11 -Wall -Wextra -pedantic -o Programmentwurf/CMakeFiles/libraries_developer_lib.dir/src/developer.c.o -c /workspaces/Programmentwurf/Programmentwurf/src/developer.c",
+  "command": "/usr/bin/gcc -I/workspaces/Programmentwurf/Programmentwurf/include -g -std=gnu11 -Wall -Wextra -pedantic -o Programmentwurf/CMakeFiles/libraries_developer_lib.dir/src/developer.c.o -c /workspaces/Programmentwurf/Programmentwurf/src/developer.c",
   "file": "/workspaces/Programmentwurf/Programmentwurf/src/developer.c",
   "output": "Programmentwurf/CMakeFiles/libraries_developer_lib.dir/src/developer.c.o"
 },
 {
   "directory": "/workspaces/Programmentwurf/build",
-  "command": "/usr/bin/clang-16 -Dlibraries_developer_group_lib_EXPORTS -I/workspaces/Programmentwurf/Programmentwurf/include -g -std=gnu11 -fPIC -Wall -Wextra -pedantic -o Programmentwurf/CMakeFiles/libraries_developer_group_lib.dir/src/developer_group.c.o -c /workspaces/Programmentwurf/Programmentwurf/src/developer_group.c",
+  "command": "/usr/bin/gcc -Dlibraries_developer_group_lib_EXPORTS -I/workspaces/Programmentwurf/Programmentwurf/include -g -std=gnu11 -fPIC -Wall -Wextra -pedantic -o Programmentwurf/CMakeFiles/libraries_developer_group_lib.dir/src/developer_group.c.o -c /workspaces/Programmentwurf/Programmentwurf/src/developer_group.c",
   "file": "/workspaces/Programmentwurf/Programmentwurf/src/developer_group.c",
   "output": "Programmentwurf/CMakeFiles/libraries_developer_group_lib.dir/src/developer_group.c.o"
 },
 {
   "directory": "/workspaces/Programmentwurf/build",
-  "command": "/usr/bin/clang-16 -I/workspaces/Programmentwurf/Programmentwurf/include -g -std=gnu11 -Wall -Wextra -pedantic -o Programmentwurf/CMakeFiles/libraries_ex_exec.dir/src/main.c.o -c /workspaces/Programmentwurf/Programmentwurf/src/main.c",
+  "command": "/usr/bin/gcc -I/workspaces/Programmentwurf/Programmentwurf/include -g -std=gnu11 -Wall -Wextra -pedantic -o Programmentwurf/CMakeFiles/libraries_ex_exec.dir/src/main.c.o -c /workspaces/Programmentwurf/Programmentwurf/src/main.c",
   "file": "/workspaces/Programmentwurf/Programmentwurf/src/main.c",
   "output": "Programmentwurf/CMakeFiles/libraries_ex_exec.dir/src/main.c.o"
 }

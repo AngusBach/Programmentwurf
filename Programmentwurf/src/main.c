@@ -25,6 +25,9 @@ char instruction;    //to prevent errors, instead of a number, one should input 
         scanf("%c", &instruction);
 
         switch(instruction) {
+            case 0:
+                printf("Invalid option. Please enter a number between 1 and 4.\n");
+                break;
             case 1:
                 print_developer("Angus Bach", "AngusBach");
                 print_developer("Faik Hadutoglu", "faikhadut");
@@ -56,6 +59,7 @@ char instruction;    //to prevent errors, instead of a number, one should input 
                 return 0; // Exit the program
             default:
                 printf("Invalid option. Please enter a number between 1 and 4.\n");
+                break;
         }
     }
     
