@@ -19,7 +19,17 @@ add_library(libraries_developer_lib STATIC src/developer.c)
 target_include_directories(libraries_developer_lib PUBLIC include)
 
 # add the library for developer_group
-add_library(libraries_developer_group_lib SHARED src/developer_group.c)
+add_library(libraries_developer_group_lib SHARED src/developer_group.c
+                                                src/developer.c)
+
+
+# add a library for your functions
+add_library(uni_library STATIC
+    src/developer_group.c
+    src/developer.c)
+# add the includes to the library
+target_include_directories(uni_library PUBLIC include)
+
 # add the includes to the library
 target_include_directories(libraries_developer_group_lib PUBLIC include)
 
@@ -29,5 +39,5 @@ add_executable(libraries_ex_exec src/main.c)
 target_include_directories(libraries_ex_exec PUBLIC include)
 # link bouth libraries
 target_link_libraries(libraries_ex_exec PRIVATE  
-    libraries_developer_lib 
+    libraries_developer_lib
     libraries_developer_group_lib)

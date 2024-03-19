@@ -1,12 +1,12 @@
 #include "developer_group.h" // Include the header file for developer group
 #include <stdio.h>
-#include <unistd.h>
+#include <unistd.h> //library for using blink delay
 
 
 void print_group_logo(void) // Printing the group logo
 {
 
-
+    //Opel Logo
     printf("           ########           \n");
     printf("        ######  ######        \n");
     printf("      ####          ####      \n");
@@ -22,8 +22,9 @@ void print_group_logo(void) // Printing the group logo
     printf("           ########           \n");
 
 
-  int blink_count = 5; // Number of times to blink
-    int blink_delay = 333333; // Delay in microseconds between blinks (approximately 3 times per second)
+        //extra for Mr. Wilking, we want to let the following Logo blink
+  int blink_count = 3; // Number of times to blink
+    int blink_delay = 300000; // Delay in microseconds between blinks (3 times per second)
 
     for (int i = 0; i < blink_count; i++) {
         // Print the logo
@@ -48,8 +49,4 @@ void print_group_logo(void) // Printing the group logo
 
         usleep(blink_delay); // Pause execution for the blink delay
     }
-
-
-
-
 }

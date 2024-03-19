@@ -11,7 +11,7 @@ int main(void) {
     char instruction[1]; // Array to store user input
     char *ptr=NULL; // Pointer to char for strtol function
 
-    while (1) { // Repeat the process while 
+    while (1) { // Repeat the process
         
             printf("\033[4;92m========================\n"); // Print formatted text for user interface
             printf("Choose your action: \n");
@@ -24,35 +24,36 @@ int main(void) {
             printf("Enter your selection: ");
             scanf(" %s", instruction);
 
-            long int choice = strtol(instruction, &ptr, 10); // Convert the character array to an integer
+            long int choice = strtol(instruction, &ptr, 10); // Convert the input array to an integer
 
-            switch(choice) {
-                case 1:
+            switch(choice) {    //Distinction the input possibilities
+                case 1: //input 1
                     {
-                        developer angus_bach = {"Angus Bach", "AngusBach"}; // Create developer object
-                        developer faik_hadutoglu = {"Faik Hadutoglu", "faikhadut"}; // Create developer object
+                        developer angus_bach = {"Angus Bach", "AngusBach"}; // Create developer object Angus
+                        developer faik_hadutoglu = {"Faik Hadutoglu", "faikhadut"}; // Create developer object Faik
                         print_developer(&angus_bach, &faik_hadutoglu); //Call function to print developer informations
                     }
                  
                     break;
-                case 2:
+                case 2: //input 2
                   
                     print_group_logo(); // Call function to print group logo
                     
                     break;
-                case 3:
+                case 3: //input 3
                     {
                         developer angus_bach = {"Angus Bach", "AngusBach"}; // Create developer object
                         developer faik_hadutoglu = {"Faik Hadutoglu", "faikhadut"}; // Create developer object
                         print_developer(&angus_bach, &faik_hadutoglu); //Call function to print developer informations
-                        print_group_logo();
+                        print_group_logo();  // Call function to print group logo
                     }
                
                     break;
-                case 4:
+                case 4: //input 4
                     printf("Exiting...\n");
                     return 0; // Exit the program
-                default:
+                
+                default: //if input is not a number between 1 and 4
                     printf("\033[91;1;5mInvalid option. Please enter a number between 1 and 4\033[0m\n");
                     break; // Add a break statement to exit the loop.
             }
