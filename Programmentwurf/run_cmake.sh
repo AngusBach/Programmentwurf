@@ -10,7 +10,7 @@ cd build
 make
 
 # Run the executable
-./libraries_ex_exec
+./library_ex_exec
 
 # Navigate back to the parent directory
 cd .. 

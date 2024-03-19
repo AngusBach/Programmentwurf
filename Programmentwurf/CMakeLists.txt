@@ -9,35 +9,22 @@ project(Programmentwurf VERSION 1.0 LANGUAGES C)
 set(CMAKE_C_STANDARD 11)
 set(CMAKE_C_STANDARD_REQUIRED True)
 
-
 # add some compile options
 add_compile_options(-Wall -Wextra -pedantic)
 
-# add the library for developer
-add_library(libraries_developer_lib STATIC src/developer.c)
-# add the includes to the library
-target_include_directories(libraries_developer_lib PUBLIC include)
 
-# add the library for developer_group
-add_library(libraries_developer_group_lib SHARED src/developer_group.c
-                                                src/developer.c)
-
-
-# add a library for your functions
+# add a library for the functions
 add_library(uni_library STATIC
-    src/developer_group.c
-    src/developer.c)
+src/developer_group.c
+src/developer.c)
+
 # add the includes to the library
 target_include_directories(uni_library PUBLIC include)
 
-# add the includes to the library
-target_include_directories(libraries_developer_group_lib PUBLIC include)
-
 # add an executabel and assign files to it
-add_executable(libraries_ex_exec src/main.c)
-# add the include directories
-target_include_directories(libraries_ex_exec PUBLIC include)
-# link bouth libraries
-target_link_libraries(libraries_ex_exec PRIVATE  
-    libraries_developer_lib
-    libraries_developer_group_lib)
+add_executable(library_ex_exec src/main.c)
+# add the include directory
+target_include_directories(library_ex_exec PUBLIC include)
+# link the library
+target_link_libraries(library_ex_exec PRIVATE  uni_library)
+
