@@ -8,9 +8,9 @@
 void print_developer(const developer *dev1, const developer *dev2) {
     printf("\033[94;1;6m=====================\n");
     printf("Name:   %s\n", dev1->name);
-    printf("Alias:  %s\n", dev1->alae);
+    printf("Alias:  %s\n", dev1->alias);
     printf("=====================\n");
     printf("Name:   %s\n", dev2->name);
-    printf("Alias:  %s\n", dev2->alae);
+    printf("Alias:  %s\n", dev2->alias);
     printf("=====================\033[0m\n");
 }
