@@ -24,10 +24,10 @@ void print_group_logo(void) // Printing the group logo
 
         //extra for Mr. Wilking, we want to let the following Logo blink
   int blink_count = 3; // Number of times to blink
-    int blink_delay = 300000; // Delay in microseconds between blinks (3 times per second)
+    int blink_delay = 200000; // Delay in microseconds between blinks (3 times per second)
 
     for (int i = 0; i < blink_count; i++) {
-        // Print the logo "Mr. wilking please grade 1"
+        // Print the logo "Mr. Wilking please grade 1", (Part of our Logo)
         printf("\033[94;1;6m888b     d888                 888       888 d8b 888 888      d8b                                888               d888   \n");
         printf("8888b   d8888                 888   o   888 Y8P 888 888      Y8P                                888              d8888   \n");
         printf("88888b.d88888                 888  d8b  888     888 888                                         888                888   \n");
